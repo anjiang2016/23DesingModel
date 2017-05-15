@@ -22,6 +22,12 @@ public:  ProductA2();
 protected:
 private:
 };
+class ProductA3 :public AbstractProductA {
+public:  ProductA3();
+		 ~ProductA3();
+protected:
+private:
+};
 
 
 class AbstractProductB {
@@ -43,6 +49,14 @@ public:  ProductB2();
 protected:
 private:
 };
+
+class ProductB3 :public AbstractProductB {
+public:  ProductB3();
+		 ~ProductB3();
+protected:
+private:
+};
+
 
 
 #endif

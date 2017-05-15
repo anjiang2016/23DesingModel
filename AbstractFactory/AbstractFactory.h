@@ -28,5 +28,14 @@ public:  ConcreteFactory2();
 		 AbstractProductB* CreateProductB();
 protected:
 private:
-}; 
+};
+class ConcreteFactory3 :public AbstractFactory {
+public:  ConcreteFactory3();
+		 ~ConcreteFactory3();
+		 AbstractProductA* CreateProductA();
+		 AbstractProductB* CreateProductB();
+protected:
+private:
+};
+
 #endif //~_ABSTRACTFACTORY_H_ 

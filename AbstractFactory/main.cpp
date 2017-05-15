@@ -7,5 +7,9 @@ int main(int argc, char* argv[]) {
 	AbstractFactory* cf2 = new ConcreteFactory2();  
 	cf2->CreateProductA();  
 	cf2->CreateProductB();
+
+	AbstractFactory * cf3 = new ConcreteFactory3();
+	cf3->CreateProductA();
+	cf3->CreateProductB();
 	return 0;
 }
