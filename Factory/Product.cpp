@@ -7,5 +7,7 @@ Product::Product() {
 }
 Product::~Product() {
 }
-ConcreteProduct::ConcreteProduct() { cout << "ConcreteProduct...." << endl; }
+ConcreteProduct::ConcreteProduct() { 
+	cout << "ConcreteProduct...." << endl; 
+}
 ConcreteProduct::~ConcreteProduct() {}
