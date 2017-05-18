@@ -12,6 +12,12 @@ public:  virtual ~AbstractionImp();
 protected:  AbstractionImp();
 private:
 };
+AbstractionImp::AbstractionImp() {
+}
+AbstractionImp::~AbstractionImp() {
+}
+void AbstractionImp::Operation() { cout << "AbstractionImp....imp..." << endl; }
+
 
 class ConcreteAbstractionImpA :public AbstractionImp {
 public:  ConcreteAbstractionImpA();
@@ -19,6 +25,11 @@ public:  ConcreteAbstractionImpA();
 		 virtual void Operation();
 protected:   private:
 };
+
+ConcreteAbstractionImpA::ConcreteAbstractionImpA() { }
+ConcreteAbstractionImpA::~ConcreteAbstractionImpA() { }
+void ConcreteAbstractionImpA::Operation() { cout << "ConcreteAbstractionImpA....HOG" << endl; }
+
 
 class ConcreteAbstractionImpB :public AbstractionImp {
 public:
@@ -28,16 +39,10 @@ public:
 protected:   private:
 };
 
-AbstractionImp::AbstractionImp() {
-}
-AbstractionImp::~AbstractionImp() {
-}
-void AbstractionImp::Operation() { cout << "AbstractionImp....imp..." << endl; }
-ConcreteAbstractionImpA::ConcreteAbstractionImpA() { }
-ConcreteAbstractionImpA::~ConcreteAbstractionImpA() { }
-void ConcreteAbstractionImpA::Operation() { cout << "ConcreteAbstractionImpA...." << endl; }
+
+
 ConcreteAbstractionImpB::ConcreteAbstractionImpB() { }
 ConcreteAbstractionImpB::~ConcreteAbstractionImpB() { }
-void ConcreteAbstractionImpB::Operation() { cout << "ConcreteAbstractionImpB...." << endl; }
+void ConcreteAbstractionImpB::Operation() { cout << "ConcreteAbstractionImpB....LBP" << endl; }
 
 #endif //~_ABSTRACTIONIMP_H_ 
